@@ -1,0 +1,67 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.message {
+  font-size: 3.5em;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.gifts {
+  display: flex;
+  gap: 60px;
+  width: 100%;
+  justify-content: center;
+  max-width: 800px;
+}
+
+.gift {
+  width: auto;
+  height: 150px;
+  object-fit: contain;
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+#marium-content {
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  padding: 40px;
+}
+
+#alina-content {
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  padding: 40px;
+}
